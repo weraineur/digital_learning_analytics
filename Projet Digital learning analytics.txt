@@ -1,0 +1,50 @@
+﻿Projet Digital Learning Analytics
+
+Contexte
+Analyse des données pédagogiques issues de la plateforme Moodle Ecoris Online afin d'identifier les facteurs de réussite, les difficultés d'apprentissage et les modules à améliorer.
+
+Objectifs
+- Mesurer la performance des étudiants par cours et par formation.
+- Identifier les modules les plus difficiles du LMS Moodle.
+- Suivre le taux de réussite et le taux d'abandon.
+- Fournir des indicateurs exploitables pour la décision pédagogique.
+
+Source de données
+- Export CSV Moodle (rapport d'activité et de notes).
+
+Variables disponibles
+- Nom complet du cours (string)
+- Nom de l'utilisateur (string)
+- Note du cours (numérique)
+- Suivi des activités des participants (%)
+- Statut d'achèvement (Oui/Non)
+- Date/temps de participation au cours
+- Durée jusqu'à l'achèvement
+- Modalité (présentiel / distanciel)
+
+KPI à définir
+- Taux d'achèvement = étudiants ayant terminé / étudiants inscrits.
+- Durée médiane d'achèvement par module.
+- Note moyenne et note médiane par module.
+- Taux d'abandon = étudiants non terminés / étudiants inscrits.
+
+Segmentation de l'analyse
+- Par module.
+- Par formation.
+- Par modalité (présentiel vs distanciel).
+
+Seuils d'alerte
+- Taux d'achèvement < 60 %.
+- Note moyenne < 10/20.
+- Durée d'achèvement anormalement élevée (par rapport à la médiane globale).
+- Taux d'abandon élevé (seuil à fixer selon l'historique).
+
+Résultats attendus
+- Tableaux identifiant les modules avec :
+  - la durée d'achèvement la plus longue,
+  - le plus fort taux de non-achèvement,
+  - les notes les plus faibles.
+- Tableau de bord simple avec :
+  - top 10 des modules à risque,
+  - tendances temporelles (évolution des KPI dans le temps),
+  - comparatif présentiel/distanciel.
